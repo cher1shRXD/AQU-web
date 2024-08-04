@@ -118,8 +118,7 @@ const Post = () => {
         <S.DescripitionWrap>
           <span>게시일: {detail?.createdAt}</span>
           <br />
-          <br />
-          <p>{detail?.description}</p>
+          <S.Descripition>{detail && detail.description}</S.Descripition>
         </S.DescripitionWrap>
       </S.Main>
     </S.Container>

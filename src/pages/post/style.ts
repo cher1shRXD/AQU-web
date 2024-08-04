@@ -16,7 +16,7 @@ export const Main = styled.div`
   box-sizing:border-box;
 `
 export const Image = styled.img`
-  height: 500px;
+  height: 400px;
   border-radius:20px;
   overflow:none;
 `
@@ -76,6 +76,16 @@ export const DescripitionWrap = styled.div`
   height: 200px;
   box-sizing: border-box;
   padding: 10px;
+  color: #e5e5e5;
+`;
+export const Descripition = styled.pre`
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  min-height: 150px;
+  color: none;
+  resize: none;
   color: #e5e5e5;
   -webkit-user-select: text;
   -moz-user-select: text;

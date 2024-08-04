@@ -46,32 +46,39 @@ export const SignupButton = styled(Link)`
 `;
 
 export const LogoWrap = styled.div`
-  width:170px;
+  width:210px;
   height:100%;
   display:flex;
   justify-content:space-between;
   align-items:center;
 `
 export const LogoImg = styled.img`
-  width:70px;
-  height:70px;
+  width:100px;
+  height:100px;
   border-radius:80px;
   object-fit:cover;
   object-position:center;
 `
 export const LogoTitle = styled.h1`
-  color:white;
-`
+  color: white;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-self:flex-end;
+  margin-bottom:20px;
+`;
 export const LogOut = styled.button`
   background-color:#FF6969;
   border:none;
   border-radius: 5px;
   text-decoration: none;
   color: white;
-  width: 70px;
-  height: 30px;
+  width: 100px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size:18px;
 `;

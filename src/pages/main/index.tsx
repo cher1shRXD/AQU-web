@@ -6,12 +6,14 @@ import useGetBoard from '../../hooks/board/useGetBoard';
 import NotificationService from '../../libs/toastify/notificationService';
 import Upload from '../../components/upload';
 import { cachingStore } from '../../store/cachingStore';
+import { userStore } from '../../store/userStore';
 
 const Main = () => {
   const [list,setList] = useState<Board[]>([])
   const [filteredList, setFilteredList] = useState<Board[]>([]);
   const cachingState = cachingStore(state=>state.cachingState);
   const setCachingState = cachingStore((state) => state.setCachingState);
+  const user = userStore(state=>state.user);
 
   const { getBoard } = useGetBoard();
 
@@ -49,17 +51,19 @@ const Main = () => {
     <S.Container>
       <S.SearchConatiner>
         <S.SearchInputWrap>
-          <S.SearchInput type="text" placeholder="검색어를 입력하세요." onChange={handleSearch}/>
+          <S.SearchInput
+            type="text"
+            placeholder="검색어를 입력하세요."
+            onChange={handleSearch}
+          />
           <S.SearchBtn>🔍</S.SearchBtn>
         </S.SearchInputWrap>
       </S.SearchConatiner>
-      <Upload/>
+      {user.role === "MEMBER" && <Upload />}
       <S.Main>
-        {
-          filteredList.map((item)=>(
-            <Article item={item} key={item.id}/>
-          ))
-        }
+        {filteredList.map((item) => (
+          <Article item={item} key={item.id} />
+        ))}
       </S.Main>
     </S.Container>
   );

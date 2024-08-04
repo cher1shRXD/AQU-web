@@ -73,4 +73,5 @@ export const SearchBtn = styled.button`
   border-radius: 0 50px 50px 0;
   background-color: #5f5f5f;
   font-size: 20px;
+  outline:none;
 `;
