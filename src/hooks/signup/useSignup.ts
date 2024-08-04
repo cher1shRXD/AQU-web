@@ -68,7 +68,7 @@ const useSignup = () => {
           return;
         }
         try {
-          await axios.post(`https:api-aqu.p-e.kr/auth/signup`, signupData);
+          await axios.post(`https://api-aqu.p-e.kr/auth/signup`, signupData);
           NotificationService.success("회원가입 성공");
           navigate("/login");
         } catch (err: any) {
