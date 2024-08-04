@@ -70,11 +70,15 @@ export const Interaction = styled.img`
   cursor: pointer;
 `
 export const DescripitionWrap = styled.div`
-  font-size:16px;
-  width:90%;
-  max-width:900px;
-  height:200px;
-  box-sizing:border-box;
-  padding:10px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 900px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 10px;
   color: #e5e5e5;
-`
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+`;
