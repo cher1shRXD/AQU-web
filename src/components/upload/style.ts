@@ -63,8 +63,8 @@ export const HiddenFileInput = styled.input.attrs({ type: "file" })`
 
 export const UploadButton = styled.button`
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -75,9 +75,16 @@ export const UploadButton = styled.button`
   &:hover {
     background-color: #0056b3;
   }
-  &>img{
-    height:20px;
-    margin-right:10px;
+  & > img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+    & > img {
+      height:15px;
+      margin-right: 5px;
+    }
   }
 `;
 
@@ -130,6 +137,13 @@ export const UploadedButton = styled.button`
     height: 20px;
     margin-right: 10px;
   }
+  @media (max-width: 600px) {
+    font-size: 14px;
+    & > img {
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
 `;
 
 export const SubmitButton = styled.button`
@@ -142,5 +156,8 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   &:active {
     background-color: #1a5319;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
   }
 `;

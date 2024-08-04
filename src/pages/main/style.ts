@@ -7,7 +7,10 @@ export const Container = styled.div`
   box-sizing:border-box;
   padding-top:150px;
   box-sizing:border-box;
-`
+  @media (max-width: 600px) {
+    padding-top:100px;
+  }
+`;
 export const Main = styled.div`
   width: 100%;
   display: grid;

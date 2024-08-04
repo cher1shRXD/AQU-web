@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width:100vw;
-  height:100vh;
-  padding-top:150px;
-  box-sizing:border-box;
-`
+  width: 100vw;
+  height: 100vh;
+  padding-top: 150px;
+  box-sizing: border-box;
+  @media (max-width: 600px) {
+    padding-top: 100px;
+  }
+`;
 export const Main = styled.div`
   width:100%;
   height:100%;
@@ -80,6 +83,7 @@ export const DescripitionWrap = styled.div`
 `;
 export const Descripition = styled.pre`
   width: 100%;
+  max-width: 900px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -91,4 +95,6 @@ export const Descripition = styled.pre`
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 `;
