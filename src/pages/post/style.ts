@@ -19,9 +19,13 @@ export const Main = styled.div`
   box-sizing:border-box;
 `
 export const Image = styled.img`
-  height: 400px;
+  width:90%;
+  max-width:900px;
+  aspect-ratio:16/9;
   border-radius:20px;
   overflow:none;
+  object-fit:contain;
+  object-position:center;
 `
 export const VideoWrap = styled.div`
   width: 90%;

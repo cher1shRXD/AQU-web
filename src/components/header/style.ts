@@ -97,6 +97,6 @@ export const LogOut = styled.button`
   @media (max-width: 600px) {
     width:70px;
     height:30px;
-    font-size: 14px;
+    font-size: 10px;
   }
 `;
