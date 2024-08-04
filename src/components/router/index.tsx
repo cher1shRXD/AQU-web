@@ -3,6 +3,7 @@ import Main from "../../pages/main";
 import Login from "../../pages/login";
 import Signup from "../../pages/signup";
 import Post from "../../pages/post";
+import NotFound from "../../pages/notFound";
 
 const Router = () => {
 
@@ -12,6 +13,7 @@ const Router = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/post/:id" element={<Post />} />
+      <Route path="/*" element={<NotFound/>} />
     </Routes>
   );
 }
