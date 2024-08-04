@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <S.Container>
       <S.LoginForm>
-        <h2 style={{ color: "white" }}>아쿠클라우드 로그인</h2>
+        <h2 style={{ color: "white",marginBottom:'20px' }}>아꾸클라우드 로그인</h2>
         <S.Input
           type="text"
           placeholder="아이디"
@@ -35,7 +35,7 @@ const Login = () => {
         />
         <S.Navigate to="/signup">처음이신가요?</S.Navigate>
         <S.Button onClick={login.submit} disabled={login.loading}>
-          {!login.loading ? "로그인" : "로그인중..."}
+          {!login.loading ? "로그인" : "로그인 중..."}
         </S.Button>
       </S.LoginForm>
     </S.Container>

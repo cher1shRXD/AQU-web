@@ -8,7 +8,9 @@ const Signup = () => {
   return (
     <S.Container>
       <S.SignupForm>
-        <h2 style={{ color: "white" }}>아쿠클라우드 회원가입</h2>
+        <h2 style={{ color: "white", marginBottom: "20px" }}>
+          아꾸클라우드 회원가입
+        </h2>
         <S.InputWrap>
           <S.Input
             type="text"
@@ -75,7 +77,7 @@ const Signup = () => {
         </S.InputWrap>
         <S.Navigate to="/login">회원이신가요?</S.Navigate>
         <S.Button onClick={signup.submit} disabled={signup.loading}>
-          {!signup.loading ? "회원가입" : "회원가입중..."}
+          {!signup.loading ? "회원가입" : "회원가입 중..."}
         </S.Button>
       </S.SignupForm>
     </S.Container>
