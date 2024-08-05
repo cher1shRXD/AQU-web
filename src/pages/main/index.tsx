@@ -61,8 +61,14 @@ const Main = () => {
       </S.SearchConatiner>
       <S.BannerWrap>
         <S.Notice to="/post/1">공지사항</S.Notice>
-        <S.Notice to="https://bolder-lemon-5f0.notion.site/6c8c7f8ca9da439a8fbfcce0663ee3c2" target='blank'>
+        <S.Notice
+          to="https://bolder-lemon-5f0.notion.site/6c8c7f8ca9da439a8fbfcce0663ee3c2"
+          target="blank"
+        >
           사용설명서
+        </S.Notice>
+        <S.Notice to="https://www.youtube.com/@go_diving" target="blank">
+          다이빙갈래?
         </S.Notice>
       </S.BannerWrap>
       {user.role === "MEMBER" && <Upload />}
@@ -71,6 +77,10 @@ const Main = () => {
           <Article item={item} key={item.id} />
         ))}
       </S.Main>
+      <S.Footer>
+        <p>제작자: cher1shRXD(김태우)<br/><br /><a href="tel:01048901466">Tel. 010-4890-1466</a></p>
+        <p style={{alignSelf:'flex-end'}}>&copy; 2024. A.Q.U(아꾸) all rights reserved</p>
+      </S.Footer>
     </S.Container>
   );
 }

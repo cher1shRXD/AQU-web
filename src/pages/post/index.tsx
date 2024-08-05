@@ -102,7 +102,9 @@ const Post = () => {
           ) : (
             <S.Image src={detail.url} />
           )
-        ) : <S.Image src='/assets/documentType.svg'/>}
+        ) : (
+          <S.Image src="/assets/documentType.svg" />
+        )}
         <S.TitleWrap>
           <S.Title>{detail?.title}</S.Title>
           <S.Author>{detail?.author.username}</S.Author>
@@ -110,9 +112,14 @@ const Post = () => {
             {user.role === "MEMBER" && (
               <S.Interaction src="/assets/download.svg" onClick={downloadReq} />
             )}
-            <S.Interaction src="/assets/link.svg" onClick={()=>{
-              handleCopyClipBoard(`https://aqu-cloud.kro.kr${location.pathname}`);
-            }}/>
+            <S.Interaction
+              src="/assets/link.svg"
+              onClick={() => {
+                handleCopyClipBoard(
+                  `https://aqu-cloud.kro.kr${location.pathname}`
+                );
+              }}
+            />
           </S.InteractionWrap>
         </S.TitleWrap>
         <S.DescripitionWrap>
@@ -121,6 +128,17 @@ const Post = () => {
           <S.Descripition>{detail && detail.description}</S.Descripition>
         </S.DescripitionWrap>
       </S.Main>
+      <S.Footer>
+        <p>
+          제작자: cher1shRXD(김태우)
+          <br />
+          <br />
+          <a href="tel:01048901466">Tel. 010-4890-1466</a>
+        </p>
+        <p style={{ alignSelf: "flex-end" }}>
+          &copy; 2024. A.Q.U(아꾸) all rights reserved
+        </p>
+      </S.Footer>
     </S.Container>
   );
 }

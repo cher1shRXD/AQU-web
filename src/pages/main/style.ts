@@ -14,6 +14,7 @@ export const Container = styled.div`
 `;
 export const Main = styled.div`
   width: 100%;
+  min-height:calc(100% - 270px);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   place-items:center;
@@ -80,7 +81,7 @@ export const SearchBtn = styled.button`
 `;
 export const BannerWrap = styled.div`
   width:100%;
-  height:30px;
+  min-height:30px;
   padding:0 50px;
   box-sizing:border-box;
   display:flex;
@@ -93,8 +94,24 @@ export const Notice = styled(Link)`
   color:#ccc;
   text-decoration:none;
   font-size:18px;
-  margin: 0 20px;
+  margin: 5px 20px;
   &:hover{
     text-decoration:underline;
   }
 `
+export const Footer = styled.div`
+  width: 100%;
+  height: 100px;
+  border-top: 1px #686d76 solid;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  flex-wrap:wrap;
+  color: #686d76;
+  & > p > a {
+    color: #686d76;
+  }
+`;

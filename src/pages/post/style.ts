@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 export const Main = styled.div`
   width:100%;
-  height:100%;
+  min-height:100%;
   display:flex;
   align-items:center;
   flex-direction:column;
@@ -80,7 +80,7 @@ export const DescripitionWrap = styled.div`
   font-size: 16px;
   width: 90%;
   max-width: 900px;
-  height: 200px;
+  min-height: 200px;
   box-sizing: border-box;
   padding: 10px;
   color: #e5e5e5;
@@ -101,4 +101,20 @@ export const Descripition = styled.pre`
   user-select: text;
   white-space: pre-wrap;
   word-wrap: break-word;
+`;
+export const Footer = styled.div`
+  width: 100%;
+  height: 100px;
+  border-top: 1px #686d76 solid;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  color: #686d76;
+  & > p > a {
+    color: #686d76;
+  }
 `;
