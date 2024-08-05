@@ -13,6 +13,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  z-index:9999;
   @media (max-width: 600px) {
     height: 100px;
   }

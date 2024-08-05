@@ -102,7 +102,7 @@ const Post = () => {
           ) : (
             <S.Image src={detail.url} />
           )
-        ) : null}
+        ) : <S.Image src='/assets/documentType.svg'/>}
         <S.TitleWrap>
           <S.Title>{detail?.title}</S.Title>
           <S.Author>{detail?.author.username}</S.Author>

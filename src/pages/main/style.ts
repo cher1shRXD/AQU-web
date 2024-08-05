@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -31,7 +32,6 @@ export const SearchConatiner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 `;
 export const SearchInputWrap = styled.div`
   max-width: 700px;
@@ -78,3 +78,23 @@ export const SearchBtn = styled.button`
   font-size: 20px;
   outline:none;
 `;
+export const BannerWrap = styled.div`
+  width:100%;
+  height:30px;
+  padding:0 50px;
+  box-sizing:border-box;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+`
+export const Notice = styled(Link)`
+  color:#ccc;
+  text-decoration:none;
+  font-size:18px;
+  margin: 0 20px;
+  &:hover{
+    text-decoration:underline;
+  }
+`

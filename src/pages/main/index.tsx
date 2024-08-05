@@ -59,6 +59,12 @@ const Main = () => {
           <S.SearchBtn>🔍</S.SearchBtn>
         </S.SearchInputWrap>
       </S.SearchConatiner>
+      <S.BannerWrap>
+        <S.Notice to="/post/1">공지사항</S.Notice>
+        <S.Notice to="https://bolder-lemon-5f0.notion.site/6c8c7f8ca9da439a8fbfcce0663ee3c2" target='blank'>
+          사용설명서
+        </S.Notice>
+      </S.BannerWrap>
       {user.role === "MEMBER" && <Upload />}
       <S.Main>
         {filteredList.map((item) => (
