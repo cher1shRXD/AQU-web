@@ -30,7 +30,7 @@ export const ModalShadow = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  z-index:99999;
+  z-index:9;
 `
 
 export const ModalWrap = styled.div`

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import 'react-toastify/dist/ReactToastify.css';
 body,html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,5 +28,25 @@ div {
   scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
+  }
+}
+
+/* toastify.css */
+.Toastify__toast-container {
+  z-index: 999999; /* 원하는 z-index 값으로 설정 */
+}
+
+.Toastify__toast {
+  max-width: 90%; /* 모바일 화면에서 튀어나가지 않도록 최대 너비 설정 */
+  margin: 10px auto; /* 중앙 정렬 */
+}
+
+.Toastify__toast-body {
+  font-size: 16px; /* 텍스트 크기 변경 */
+}
+
+@media (max-width: 600px) {
+  .Toastify__toast {
+    font-size: 14px; /* 모바일 화면에서 텍스트 크기 조정 */
   }
 }
